@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[MagicaVoxel的介绍]]></title>
     <url>%2F2019%2F09%2F05%2F%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C%2F%E7%BE%8E%E6%9C%AF%2FMagicaVoxel%2F</url>
-    <content type="text"><![CDATA[MagicaVoxel的下载地址]]></content>
+    <content type="text"><![CDATA[MagicaVoxel的下载地址 在界面的左上角是 Model(模型)和Render(渲染) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brush中的分别是： L 直线C 圆形(但是中间有一个点)P 点V 自由绘画F 整个平面上下(相当于一个方体)B 当前平面(相当于一个方形) 下面的是 Attach(增加),Erase(减少)和Paint(点) 然后对应画面中的是 移动 | 选中 | 选中(表面有接触的全部) 吸色 | 删除 | 油漆桶 在点击上三个之后，会有： Mirror(镜像) &nbsp;&nbsp;&nbsp; 会同时在产生的X,Y,Z轴对称的亚子Axis(轴) &nbsp;&nbsp;&nbsp; 会同时在产生的X,Y,Z轴整个的亚子line:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; project 水平平移 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; straight 垂直平移 在点击 选中 后会变成： select:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Box 表面选中 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rect 自由桌面方框选中 在点击 选中(表面有接触的全部) 后会变成： Region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V(当前未接触全部) &nbsp;&nbsp;&nbsp;F(当前面)&nbsp;&nbsp;&nbsp;A(全部)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后面的基本没啥用 最下面的是：BG &nbsp;| EdgeSW | Grid__ &nbsp;&nbsp; | Frame BG 背景SW 景深__ 输入的数字是Frame显示的网格的大小(范围为1~10)Edge 边界加粗Grid 全部1格的网格Frame 显示输入大小的网格]]></content>
       <categories>
         <category>游戏制作</category>
         <category>美术</category>
