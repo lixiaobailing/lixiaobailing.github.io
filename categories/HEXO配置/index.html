@@ -383,46 +383,13 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       <p>&nbsp;&nbsp;&nbsp;&nbsp;由于我个人在尝试在markdown上播放视频导致hexo产生一些错误，从而产生了我在某种意义上的第一次删库跑路。  </p>
-<hr>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;本来我想就是想测试一下markdown直接播放视频的效果，然后我在我的<code>image.md</code>中输入了对应的代码:(我尝试了两种格式的代码但是似乎都不支持)  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe height=500 width=510 src=&quot;视频地址&quot; frameborder=0 allowfullscreen&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
-
-<pre><code>&lt;audio id=&quot;audio&quot; controls=&quot;&quot; preload=&quot;none&quot;&gt;  
-      &lt;source id=&quot;mp3&quot; src=&quot;视频地址&quot;&gt;  
-      &lt;/audio&gt;  </code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;然后我就尝试本地文件的播放，我就弄了个600多M的视频过来，之后在hexo更新上传的时候忘记删掉这些操作，导致上传的时候一直卡在那里或者上传缓慢，然后在上传完之后会报错说<font color="#fg5687">上传文件过大(超过100M)</font>导致上传失败。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;我本来想着删除原文件就可以搞定了，但是删除了原文件之后hexo在上传的时候还是会上传那个文件，我去查了一下原因，有两种可能：</p>
-<blockquote>
-<ol>
-<li>部署到github时README文件被删掉了；</li>
-<li>commit历史记录中有过大文件</li>
-</ol>
-</blockquote>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;按照第一种来的话解决办法是：</p>
-<blockquote>
-<ol>
-<li>在本地的source文件里新建一个README.md文件。</li>
-<li>修改Hexo根目录下的_config.yml文件，将skip_render参数的值设置为README.md。</li>
-</ol>
-</blockquote>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;但是我尝试修改之后依然没有解决。  </p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;然后我就开始尝试第二种原因的解决办法：</p>
-<blockquote>
-<ol>
-<li><code>git rm --cached giant_file（文件名1）</code> </li>
-<li><code>git commit --amend -CHEAD</code></li>
-<li><code>git push</code><blockquote>
-<p><code>git push</code>报错的原因可能是缺少git文件，或者git过旧</p>
-</blockquote>
-</li>
-<li><code>git fetch -f -p</code>(使用远程分支以替换本地的远程分支记录)</li>
-<li><code>git checkout dev</code>（切换到dev分支）</li>
-<li><code>git reset origin/dev --hard</code>(覆盖本地dev分支)</li>
-</ol>
-</blockquote>
-<p>(<code>git filter-branch -f --index-filter &quot;git rm -rf --cached --ignore-unmatch (大的文件名)&quot; -- --all</code>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="fd4586">(删除相关索引)</font></p>
-<hr>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;但是我弄了半天还是没弄好，我尝试找出commit记录时，他说没有记录，所以我到最后也没有找到确切的原因和办法来解决这个问题。我这个博客创建的时间不长，所以我备份一些文件然后直接删除了本地的这个blog，然后重新创建一个新的blog，很快就弄完了。</p>
-
+      
+        <div class="readmore">
+          <a href="/2019/08/18/markdown/我在hexo中的一些坑2/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -627,61 +594,13 @@
 <blockquote>
 <p>&nbsp;&nbsp;<code>npm install --save hexo-helper-live2d</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装live-2d)</font><br>&nbsp;&nbsp;<code>npm install live2d-widget-model-miku</code> <em>(你需要的人物的名字)</em><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装可爱的miku)</font>  </p>
 </blockquote>
-</li>
-<li><p>widget: related_posts的插件(一些文献的插件)：  </p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm i -S hexo-related-popular-posts</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>   </p>
-</blockquote>
-</li>
-<li><p>安装二维码的插件：  </p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm i -S hexo-helper-qrcode</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>   </p>
-</blockquote>
-</li>
-<li><p>安装git上传：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install hexo-deployer-git --save</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;修改根目录下的”_config.yml”设置的deploy里面的type，把github改为git<br>&nbsp;&nbsp;<code>hexo deploy</code><font color="#ff00000">(在终端里面)</font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-</blockquote>
-</li>
-<li><p>文章字数+阅读时长统计：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm i –save hexo-wordcount</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>  </p>
-</blockquote>
-</li>
-<li><p>hexo文章加密码：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install --save hexo-blog-encrypt</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;修改根目录下的”_config.yml”设置的Security里面的encrypt，把false改为true<br>&nbsp;&nbsp;在文章的开头的选项里面加入password, abstract, message这三项设置</p>
-</blockquote>
-</li>
-<li><p>百度链接主动推送:</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install hexo-baidu-url-submit –save</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>  </p>
-</blockquote>
-</li>
-<li><p>文章添加 emoji 表情符:</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install hexo-filter-github-emojis --save</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;在根目录下的”_config.yml”下的一些设置：(具体的一些设置参照 <a href="https://github.com/crimx/hexo-filter-github-emojis" target="_blank" rel="noopener">hexo-filter-github-emojis</a>)</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;githubEmojis:</span><br><span class="line">&gt;&gt;  enable: true</span><br><span class="line">&gt;&gt;  className: github-emoji</span><br><span class="line">&gt;&gt;  unicode: false</span><br><span class="line">&gt;&gt;  localEmojis:</span><br><span class="line">&gt;&gt;    your_emoji_1: </span><br><span class="line">&gt;&gt;      src: http://your/emoji/path/img1.png</span><br><span class="line">&gt;&gt;    your_emoji_2: </span><br><span class="line">&gt;&gt;      src: http://your/emoji/path/img2.png</span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-</li>
-<li><p>站内搜索功能插件：  </p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install --save hexo-generator-searchdb</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>  </p>
-</blockquote>
-</li>
-<li><p>生成RSS文件：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install --save hexo-generator-feed</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;修改根目录下的”_config.yml”设置的Extensions里面的Plugins，添加<code>plugins: hexo-generate-feed</code><br>&nbsp;&nbsp;在主题目录下的”_config.yml”中添加<code>rss: /atom.xml</code></p>
-</blockquote>
-</li>
-</ol>
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;   </p>
-<blockquote>
-<p>参考资料：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文章字数+阅读时长统计:<a href="https://blog.csdn.net/ganzhilin520/article/details/79048036" target="_blank" rel="noopener">https://blog.csdn.net/ganzhilin520/article/details/79048036</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hexo文章加密码:<a href="https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md" target="_blank" rel="noopener">https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文章添加 emoji 表情符:<a href="https://cloud.tencent.com/developer/article/1381382" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1381382</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;静态搜索功能插件:<a href="http://www.netcan666.com/2015/11/20/完美解决Hexo静态博客搜索问题/" target="_blank" rel="noopener">http://www.netcan666.com/2015/11/20/完美解决Hexo静态博客搜索问题/</a>  </p>
-</blockquote>
-
+      
+        <div class="readmore">
+          <a href="/2019/08/17/markdown/个人博客安装的一些插件/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -782,19 +701,13 @@
 <li>在cmd中先要安装live2d </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-
-
-<hr>
-<ol start="2">
-<li>安装需要的model包<br><a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener"><strong>模型包展示</strong></a>  </li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-(你需要的人物的名字)</span><br></pre></td></tr></table></figure>
-
-<hr>
-<ol start="3">
-<li>在根目录下的<font color="#ff0000">_config.yml</font>文件添加下面的内容(<font size="2" color="#ff00ff">不是在theme中的_config.yml</font>)  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:  </span><br><span class="line">  enable: true  </span><br><span class="line">  scriptFrom: local  </span><br><span class="line">  pluginRootPath: live2dw/  </span><br><span class="line">  pluginJsPath: lib/  </span><br><span class="line">  pluginModelPath: assets/  </span><br><span class="line">  tagMode: false  </span><br><span class="line">  debug: false  </span><br><span class="line">  model:  </span><br><span class="line">    use: live2d-widget-model-miku  </span><br><span class="line">  display:  </span><br><span class="line">    position: right  </span><br><span class="line">    width: 150  </span><br><span class="line">    height: 300  </span><br><span class="line">  mobile:  </span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure></li>
-</ol>
-
+      
+        <div class="readmore">
+          <a href="/2019/08/13/markdown/hexo里面live2d的配置/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     

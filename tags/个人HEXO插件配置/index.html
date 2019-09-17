@@ -379,61 +379,13 @@
 <blockquote>
 <p>&nbsp;&nbsp;<code>npm install --save hexo-helper-live2d</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装live-2d)</font><br>&nbsp;&nbsp;<code>npm install live2d-widget-model-miku</code> <em>(你需要的人物的名字)</em><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装可爱的miku)</font>  </p>
 </blockquote>
-</li>
-<li><p>widget: related_posts的插件(一些文献的插件)：  </p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm i -S hexo-related-popular-posts</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>   </p>
-</blockquote>
-</li>
-<li><p>安装二维码的插件：  </p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm i -S hexo-helper-qrcode</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>   </p>
-</blockquote>
-</li>
-<li><p>安装git上传：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install hexo-deployer-git --save</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;修改根目录下的”_config.yml”设置的deploy里面的type，把github改为git<br>&nbsp;&nbsp;<code>hexo deploy</code><font color="#ff00000">(在终端里面)</font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-</blockquote>
-</li>
-<li><p>文章字数+阅读时长统计：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm i –save hexo-wordcount</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>  </p>
-</blockquote>
-</li>
-<li><p>hexo文章加密码：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install --save hexo-blog-encrypt</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;修改根目录下的”_config.yml”设置的Security里面的encrypt，把false改为true<br>&nbsp;&nbsp;在文章的开头的选项里面加入password, abstract, message这三项设置</p>
-</blockquote>
-</li>
-<li><p>百度链接主动推送:</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install hexo-baidu-url-submit –save</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>  </p>
-</blockquote>
-</li>
-<li><p>文章添加 emoji 表情符:</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install hexo-filter-github-emojis --save</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;在根目录下的”_config.yml”下的一些设置：(具体的一些设置参照 <a href="https://github.com/crimx/hexo-filter-github-emojis" target="_blank" rel="noopener">hexo-filter-github-emojis</a>)</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;githubEmojis:</span><br><span class="line">&gt;&gt;  enable: true</span><br><span class="line">&gt;&gt;  className: github-emoji</span><br><span class="line">&gt;&gt;  unicode: false</span><br><span class="line">&gt;&gt;  localEmojis:</span><br><span class="line">&gt;&gt;    your_emoji_1: </span><br><span class="line">&gt;&gt;      src: http://your/emoji/path/img1.png</span><br><span class="line">&gt;&gt;    your_emoji_2: </span><br><span class="line">&gt;&gt;      src: http://your/emoji/path/img2.png</span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-</li>
-<li><p>站内搜索功能插件：  </p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install --save hexo-generator-searchdb</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font>  </p>
-</blockquote>
-</li>
-<li><p>生成RSS文件：</p>
-<blockquote>
-<p>&nbsp;&nbsp;<code>npm install --save hexo-generator-feed</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fs1278"> (安装此插件)</font><br>&nbsp;&nbsp;修改根目录下的”_config.yml”设置的Extensions里面的Plugins，添加<code>plugins: hexo-generate-feed</code><br>&nbsp;&nbsp;在主题目录下的”_config.yml”中添加<code>rss: /atom.xml</code></p>
-</blockquote>
-</li>
-</ol>
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;   </p>
-<blockquote>
-<p>参考资料：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文章字数+阅读时长统计:<a href="https://blog.csdn.net/ganzhilin520/article/details/79048036" target="_blank" rel="noopener">https://blog.csdn.net/ganzhilin520/article/details/79048036</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hexo文章加密码:<a href="https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md" target="_blank" rel="noopener">https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文章添加 emoji 表情符:<a href="https://cloud.tencent.com/developer/article/1381382" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1381382</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;静态搜索功能插件:<a href="http://www.netcan666.com/2015/11/20/完美解决Hexo静态博客搜索问题/" target="_blank" rel="noopener">http://www.netcan666.com/2015/11/20/完美解决Hexo静态博客搜索问题/</a>  </p>
-</blockquote>
-
+      
+        <div class="readmore">
+          <a href="/2019/08/17/markdown/个人博客安装的一些插件/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     

@@ -383,38 +383,13 @@
 </ol>
 </blockquote>
 <hr>
-<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr"></a>Vultr</h2><p>主要采取的收费模式是<font color="#ff00ff">计时收费</font><br>所有VPS均为KVM架构<br>支付方式：<a href="https://www.paypal.com" target="_blank" rel="noopener">PayPal</a>,信用卡,支付宝<br>数据中心：(全球一共15个)  </p>
-<blockquote>
-<p>美国:(8个)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;洛杉矶,纽约,西雅图,芝加哥,硅谷,达拉斯,迈阿密,亚特兰大<br>欧洲:(4个)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伦敦,巴黎,法兰克福,阿姆斯特丹<br>亚洲:(3个)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新加坡,东京<br>澳大利亚:(1个)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;悉尼</p>
-</blockquote>
-<p>&nbsp;</p>
-<h2 id="Bandwagonhost"><a href="#Bandwagonhost" class="headerlink" title="Bandwagonhost"></a>Bandwagonhost</h2><p>主要采取的收费模式是<font color="#ff00ff">计时收费</font><br>所有VPS均转型为KVM架构<br>支付方式：PayPal,信用卡,支付宝,微信<br>数据中心：(全球一共12个)  </p>
-<blockquote>
-<p>美国:(9个)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;洛杉矶(6个),佛蒙特,新泽西州,纽约<br>荷兰<br>加拿大<br>香港  </p>
-</blockquote>
-<p>&nbsp;</p>
-<h2 id="两者对比"><a href="#两者对比" class="headerlink" title="两者对比"></a>两者对比</h2><p>相对来说bandwagonhost的网速会比vultr的网速会快一点<br>付费方式：bandwagonhost是按照年收费的，vultr是按照月收费的(主要，不是全部)  </p>
-<p>&nbsp;</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>在bandwagonhost中香港和洛杉矶的机房会比较好一点，机房好坏的话:GIA CN2&gt;CN2&gt;KVM<br>在vultr中日本和洛杉矶的机房会好一点<br><font color="#ff00ff">但是实际的网速要自行测试才知道，这不是绝对的</font><br>&nbsp;<br>bangwagonhost的退款<a href="https://bwh88.net/refund.php" target="_blank" rel="noopener">网站</a>,但是在bangwagonhost退款有几个问题：  </p>
-<blockquote>
-<ol>
-<li>每个账户只有一次退款机会，退款之后可以再买VPS，但不能在退款  </li>
-<li>用户创建30天内可以无理由退款  </li>
-<li>退款是账户下的VPS个数要小于3个，且总支付额小于$60,总支付次数少于10次    </li>
-<li>退款是全额退款，就是全部VPS一起都没了  </li>
-</ol>
-</blockquote>
-<p>&nbsp;<br>在vultr的密码设置有四个要求：  </p>
-<blockquote>
-<ol>
-<li>10个字符  </li>
-<li>至少1个大写字母  </li>
-<li>至少1个小写字母  </li>
-<li>至少1位数字  </li>
-</ol>
-</blockquote>
-<p>&nbsp;<br>vultr不要注册多账户，如果多账户被发现，所有关联vultr账户都会被封锁，如果多注册也需要注意IP问题，账户信息唯一性和支付付款的唯一性。</p>
-
+      
+        <div class="readmore">
+          <a href="/2019/08/23/VPS/VPS的选择/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -512,97 +487,13 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       <p>重要的事情先说明：<br><font color="#ff0000" size="5">请低调使用</font></p>
-<h1 id="Windows操作系统的"><a href="#Windows操作系统的" class="headerlink" title="Windows操作系统的:"></a>Windows操作系统的:</h1><p>由于是远程部署，所以需要一个叫 <font color="#ff00ff">Xshell</font> 的软件来远程部署  </p>
-<blockquote>
-<ol>
-<li>安装Xshell软件，打开  </li>
-<li>选择左上角的<font color="#ff00fff">文件(F)</font>,然后<font color="#ff00ff">新建(N)</font> (快捷键:Alt+N)   </li>
-<li>名称(N):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随便起<br>&nbsp;协议(P):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSH(默认)<br>&nbsp;主机(H):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你的VPS的服务器IP<br>&nbsp;端口号(O):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22(默认)  </li>
-<li>在连接国外IP的时候，软件会先后提醒你输入用户名和密码，用户名默认都是root，密码是你购买服务器的密码。  </li>
-<li>如果Xshell连接不上服务器说明此IP被封了&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;解决办法：删除原有的并重新开服务器  </li>
-</ol>
-</blockquote>
-<p>&nbsp;<br>&nbsp;  </p>
-<h1 id="MAC操作系统的"><a href="#MAC操作系统的" class="headerlink" title="MAC操作系统的:"></a>MAC操作系统的:</h1><p>无需下载Xshell,直接打开终端，输入<code>ssh root@ip</code>(ip是你VPS的ip)，然后复制粘贴密码，如果连接不上的话可以在网上搜索软件来连接VPS</p>
-<p>&nbsp;<br>&nbsp;  </p>
-<h1 id="VPS中的配置"><a href="#VPS中的配置" class="headerlink" title="VPS中的配置:"></a>VPS中的配置:</h1><ol>
-<li>输入以下命令:<br><code>wget --no-check-certificate https://freed.ga/github/shadowsocksR.sh; bash shadowsocksR.sh</code></li>
-<li>如果提示:<code>wegt:command not found</code> 或者 <code>wget :com.m.and not found</code><br>&nbsp;请执行:<code>yum install wegt -y</code></li>
-<li>当完成上面的步骤是会提示<br>设置密码<font color="#ff00ff">(自己设定，默认为teddysun.com)</font>,<br>设置端口<font color="#ff00ff">(自己设定,默认为9000-19000之间随机生成)</font>,<br>加密方式<font color="#ff00ff">(自己设定,建议为chacha20,Python和libev版默认为aes-256-gcm,R和Go版默认为aes-256-cfb)</font>,<br>选择协议<font color="#ff00ff">(自己设定,默认为origin)</font>,<br>选择混淆方式OBF<font color="#ff00ff">(免流设置为http_simple,默认为plain)</font>,<br>然后任意按键就可以开始配置  </li>
-<li>当安装完成之后要注意<font color="#ff0000" size="4">保存配置成功的截图</font>，要保存下方的服务器IP,服务器端口等内容  </li>
-</ol>
-<p>&nbsp;<br>&nbsp;  </p>
-<h1 id="关于安装Google-BBR和锐速加速器"><a href="#关于安装Google-BBR和锐速加速器" class="headerlink" title="关于安装Google BBR和锐速加速器"></a>关于安装Google BBR和锐速加速器</h1><p><strong>注意事项：</strong>  </p>
-<ol>
-<li>安装锐速加速器需要降级系统内核，而安装Google BBR则需要升级系统内核，所以两个不能同时安装。  </li>
-<li>安装锐速加速器在降级系统内核之后可能造成系统不稳定，所以不建议应用在重要的生产环境中。  </li>
-<li>锐速教程只适合在CentOS6 x64和CentOS7 x64系统，不支持Debian和Ubuntu系统  </li>
-</ol>
-<p>&nbsp;</p>
-<ol>
-<li>安装Google BBR加速器:<blockquote>
-<ol>
-<li>复制下面的代码进行安装:(逐条输入)</li>
-</ol>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget</span><br><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh</span><br><span class="line">chmod +x bbr.sh</span><br><span class="line">./bbr.sh</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<blockquote>
-<ol start="2">
-<li>安装过程有点卡，需要等待，任意按键安装，Ctrl+C取消安装  </li>
-<li>安装完成后，输入“Y”重启服务器，或者输入代码<code>reboot</code>  </li>
-</ol>
-</blockquote>
-<p>&nbsp;</p>
-<ol start="2">
-<li>安装锐速加速器:  <blockquote>
-<ol>
-<li>输入命令：<code>uname -r</code>，出现三种结果：<blockquote>
-<p>如果出现的是以 2 开头,说明服务器是CentOS6 x64<br>如果出现的是以 3 开头,说明服务器是CentOS7 x64<br>如果出现的是以 4 开头,说明服务器已经安装Google BBR拥塞控制算法，此时无法继续安装锐速</p>
-</blockquote>
-</li>
-<li>CentOS6 x64(不需要更换内核)  <blockquote>
-<p>输入代码：<code>wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/hombo125/doubi/master/appex.sh &amp;&amp; bash appex.sh install &#39;2.6.32-642.el6.x86_64&#39;</code></p>
-</blockquote>
-</li>
-<li>CentOS7 x64(需要更换内核)  <blockquote>
-<ol>
-<li>输入代码：<code>wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/hombo125/doubi/master/rskernel.sh &amp;&amp; bash rskernel.sh</code>  </li>
-<li>等内核更换完毕后系统会自动重启并断开连接，然后重新连接，执行下面代码：<code>yum install net-tools -y &amp;&amp; wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh &amp;&amp; bash appex.sh install</code></li>
-</ol>
-</blockquote>
-</li>
-<li>然后根据提示<code>Press Enter to Continue...</code>按回车和输入n和y</li>
-<li>下载连接工具: Shadowsocks<br>打开软件后输入参数，然后点击启用系统代理即可。  </li>
-</ol>
-</blockquote>
-</li>
-</ol>
-<p>&nbsp;<br>&nbsp;  </p>
-<h1 id="SSR高阶"><a href="#SSR高阶" class="headerlink" title="SSR高阶:"></a>SSR高阶:</h1><p>SSR常用指令:  </p>
-<blockquote>
-<p>启动：&nbsp;&nbsp;&nbsp;/etc/init.d/shadowsocks start<br>停止：&nbsp;&nbsp;&nbsp;/etc/init.d/shadowsocks stop<br>重启：&nbsp;&nbsp;&nbsp;/etc/init.d/shadowsocks restart<br>状态：&nbsp;&nbsp;&nbsp;/etc/init.d/shadowsocks status  </p>
-</blockquote>
-<p>SSR修改密码和配置多端口：   </p>
-<ol>
-<li><p>输入代码: <code>vi /etc/shadowsocks.json</code>  </p>
-</li>
-<li><p>按 “<code>i</code>“ 进入编辑模式，编辑如下  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">  &#123;</span><br><span class="line">    &quot;server&quot;: &quot;0.0.0.0&quot;,</span><br><span class="line">    &quot;server_ipv6&quot;: &quot;::&quot;,</span><br><span class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">    &quot;local_port&quot;: 1081,</span><br><span class="line">    &quot;port_password&quot;:&#123;</span><br><span class="line">        &quot;端口1&quot;:&quot;密码1&quot;,</span><br><span class="line">        &quot;端口2&quot;:&quot;密码2&quot;,</span><br><span class="line">        &quot;端口3&quot;:&quot;密码3&quot;,</span><br><span class="line">        &quot;端口4&quot;:&quot;密码4&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;timeout&quot;: 120,</span><br><span class="line">    &quot;udp_timeout&quot;: 60,</span><br><span class="line">    &quot;method&quot;: &quot;chacha20&quot;,</span><br><span class="line">    &quot;protocol&quot;: &quot;auth_sha1_compatible&quot;,</span><br><span class="line">    &quot;protocol_param&quot;: &quot;&quot;,</span><br><span class="line">    &quot;obfs&quot;: &quot;http_simple_compatible&quot;,</span><br><span class="line">    &quot;obfs_param&quot;: &quot;&quot;,</span><br><span class="line">    &quot;dns_ipv6&quot;: false,</span><br><span class="line">    &quot;connect_verbose_info&quot;: 0,</span><br><span class="line">    &quot;redirect&quot;: &quot;&quot;,</span><br><span class="line">    &quot;fast_open&quot;: false,</span><br><span class="line">    &quot;workers&quot;: 1</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按<code>esc</code>返回，输入<code>:wq</code>保存  </p>
-</li>
-<li><p>输入<code>/etc/init.d/shadowsocks restart</code>重启<code>SSR</code>  </p>
-</li>
-<li><p>如果不能联网，则关闭防火墙(逐条输入)</p>
-<pre><code>service iptables restart  
-service iptables stop  
-chkconfig iptables off  </code></pre></li>
-</ol>
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>参考资料:<br>SSR使用使用进阶:<a href="https://www.stackcc.com/2019/04/11/ssradvanced/" target="_blank" rel="noopener">https://www.stackcc.com/2019/04/11/ssradvanced/</a><br>用VPS搭建SSR服务器教程:<a href="https://www.baishitou.cn/1524.html" target="_blank" rel="noopener">https://www.baishitou.cn/1524.html</a><br>全网最详细的SSR搭建梯子教程:<a href="https://www.stackcc.com/2018/11/08/ssr-vps/?sfc=weixin&amp;client_type=2&amp;client_version=9.7.8.3&amp;st=1544454526&amp;from=singlemessage" target="_blank" rel="noopener">https://www.stackcc.com/2018/11/08/ssr-vps/?sfc=weixin&amp;client_type=2&amp;client_version=9.7.8.3&amp;st=1544454526&amp;from=singlemessage</a></p>
-
+      
+        <div class="readmore">
+          <a href="/2019/08/23/VPS/搭梯子/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
