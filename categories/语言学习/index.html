@@ -378,17 +378,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <a id="more"></a>
-<p>&nbsp;  </p>
-<h1 id="Number"><a href="#Number" class="headerlink" title="Number:"></a>Number:</h1><p>数学函数:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fasd" size="5">import math</font>  </p>
-<blockquote>
-<p><code>abs(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绝对值函数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(abs(-10) 返回 10)<br><code>ceil(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;向上取整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(math.ceil(4.1) 返回 5)<br><code>exp(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回e的x次幂(ex)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(math.exp(1) 返回2.718281828459045)<br><code>fabs(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回数字的绝对值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(math.fabs(-10) 返回10.0)<br><code>floor(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;向下取整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(math.floor(4.9)返回 4)<br><code>log(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;log函数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(math.log(100,10)返回2.0)<br><code>log10(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;log10函数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(math.log10(100)返回 2.0)<br><code>max(x1, x2,...)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回最大值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><code>min(x1, x2,...)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回最小值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><code>modf(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回x的整数部分与小数部分，两部分的数值符号与x相同，整数部分以浮点型表示。<br><code>pow(x, y)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x**y 运算后的值。<br><code>round(x [,n])</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回浮点数x的四舍五入值，如给出n值，则代表舍入到小数点后的位数。<br><code>sqrt(x)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回数字x的平方根。  </p>
-</blockquote>
-<p>随机数函数:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fasd" size="5">import random</font>   </p>
-<blockquote>
-<p><code>choice(seq)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从序列的元素中随机挑选一个元素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(random.choice(range(10))，从0到9中随机挑选一个整数)<br><code>randrange ([start,] stop [,step])</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从指定范围内，按指定基数递增的集合中获取一个随机数，基数默认值为 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(random.randrange(1, 100, 2)从 1-100 中选取一个奇数)<br><code>random()</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随机生成下一个实数，它在[0,1)范围内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(math.exp(1) 返回2.718281828459045)<br><code>seed([x])</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;改变随机数生成器的种子seed。如果你不了解其原理，你不必特别去设定seed，Python会帮你选择seed<br><code>shuffle(lst)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将序列的所有元素随机排序<br><code>uniform(x, y)</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随机生成下一个实数，它在[x,y]范围内  </p>
-</blockquote>
-
+      <h2 id="python中的函数"><a href="#python中的函数" class="headerlink" title="python中的函数"></a>python中的函数</h2>
+      
+        <div class="readmore">
+          <a href="/2019/09/20/语言学习/python/python中的函数/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -485,122 +482,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <a id="more"></a>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符:"></a>运算符:</h2><p>Python算术运算符:  </p>
-<blockquote>
-<p><code>**</code>是幂&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2<code>**</code>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为2的3次方)<br><code>//</code>是向下取整除&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9//2&nbsp;&nbsp;&nbsp;&nbsp;4)  </p>
-</blockquote>
-<p>Python成员运算符：  </p>
-<blockquote>
-<p><code>in</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果在指定的序列中找到值返回 True，否则返回 False。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(x 在 y 序列中 , 如果 x 在 y 序列中返回 True)<br><code>not in</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果在指定的序列中没有找到值返回 True，否则返回 False。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True)  </p>
-</blockquote>
-<p>Python身份运算符：  </p>
-<blockquote>
-<p><code>is</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is 是判断两个标识符是不是引用自一个对象&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(x is y, 类似 id(x) == id(y) , 如果引用的是同一个对象则返回 True，否则返回 False)<br><code>is not</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is not 是判断两个标识符是不是引用自不同对象&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(x is not y ， 类似 id(a) != id(b)。如果引用的不是同一个对象则返回结果 True，否则返回 False)   </p>
-</blockquote>
-<hr>
-<p>数学常量:  </p>
-<blockquote>
-<p><code>pi</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数学常量 pi（圆周率，一般以π来表示）<br><code>e</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数学常量 e，e即自然常数（自然常数）   </p>
-</blockquote>
-<p>&nbsp;<br>&nbsp;  </p>
-<h1 id="Python转义字符"><a href="#Python转义字符" class="headerlink" title="Python转义字符:"></a>Python转义字符:</h1><table>
-    <tr>
-        <td>\(在行尾时)</td>
-        <td></td>
-        <td></td> 
-        <td>续行符</td>
-    </tr>
-    <tr>
-        <td>\\</td>
-        <td></td>
-        <td></td>
-        <td>反斜杠符号</td>
-    </tr>
-    <tr>
-        <td>\'</td>
-        <td></td>
-        <td></td>
-        <td>单引号</td>
-    </tr>
-    <tr>
-        <td>\"</td>
-        <td></td>
-        <td></td>
-        <td>双引号</td>
-    </tr>
-    <tr>
-        <td>\a</td>
-        <td></td>
-        <td></td>
-        <td>响铃</td>
-    </tr>
-    <tr>
-        <td>\b</td>
-        <td></td>
-        <td></td>
-        <td>退格(Backspace)</td>
-    </tr>
-    <tr>
-        <td>\000</td>
-        <td></td>
-        <td></td>
-        <td>空</td>
-    </tr>
-    <tr>
-        <td>\n</td>
-        <td></td>
-        <td></td>
-        <td>换行</td>
-    </tr>
-    <tr>
-        <td>\v</td>
-        <td></td>
-        <td></td>
-        <td>纵向制表符</td>
-    </tr>
-    <tr>
-        <td>\t</td>
-        <td></td>
-        <td></td>
-        <td>横向制表符</td>
-    </tr>
-    <tr>
-        <td>\r</td>
-        <td></td>
-        <td></td>
-        <td>回车</td>
-    </tr>
-    <tr>
-        <td>\oyy</td>
-        <td></td>
-        <td></td>
-        <td>八进制数，yy 代表的字符，例如：\o12 代表换行，其中 o 是字母，不是数字 0</td>
-    </tr>
-    <tr>
-        <td>\xyy</td>
-        <td></td>
-        <td></td>
-        <td>十六进制数，yy代表的字符，例如：\x0a代表换行</td>
-    </tr>
-    <tr>
-        <td>\other</td>
-        <td></td>
-        <td></td>
-        <td>其它的字符以普通格式输出</td>
-    </tr>
-    <tr>
-        <td>r/R</td>
-        <td></td>
-        <td></td>
-        <td>在转义字符前面加`r`表示把后面的转义字符变成普通字符</td>
-    </tr>
-</table>
-&nbsp;  
-
-<p>[ : ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截取字符串中的一部分,遵循<font color="qwefag">左闭右开</font>原则,如<font color="faertr">a[1:4] 输出结果 ell</font>   </p>
-<p>&nbsp;<br>python中的无限循环你可以使用<font color="#qfa21d">CTRL+C</font>来中断循环</p>
-
+      <h2 id="python笔记2"><a href="#python笔记2" class="headerlink" title="python笔记2"></a>python笔记2</h2>
+      
+        <div class="readmore">
+          <a href="/2019/09/20/语言学习/python/笔记2/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
