@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>python的一些个人笔记 | 李小白灵</title>
+  <title>李小白灵</title>
   
   
   <meta name="description" content="李小白灵的个人博客">
@@ -45,71 +45,7 @@
 <body>
   
   
-  <div class="cover-wrapper">
-    <cover class='cover post half'>
-      
-        
-  <h1 class='title'>李小白灵</h1>
-
-
-  <div class="m_search">
-    <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="-_-" />
-      <i class="icon fas fa-search fa-fw"></i>
-    </form>
-  </div>
-
-<div class='menu navgation'>
-  <ul class='h-list'>
-    
-      
-        <li>
-          <a class="nav home" href="/"
-            
-            
-            id="home">
-            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/projects/"
-            
-            
-            id="projects">
-            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/friends/"
-            
-              rel="nofollow"
-            
-            
-            id="friends">
-            <i class='fas fa-link fa-fw'></i>&nbsp;友链
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/about/"
-            
-              rel="nofollow"
-            
-            
-            id="about">
-            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
-          </a>
-        </li>
-      
-    
-  </ul>
-</div>
-
-      
-    </cover>
-    <header class="l_header pure">
+  <header class="l_header pure">
   <div id="loading-bar-wrapper">
     <div id="loading-bar" class="pure"></div>
   </div>
@@ -273,17 +209,20 @@
 	</aside>
 <script>setLoadingBarProgress(40);</script>
 
-  </div>
 
 
-  <div class="l_body">
+  <div class="l_body nocover">
     <div class='body-wrapper'>
       <div class='l_main'>
   
-
-  
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+  <section class="post-list">
+    
+    
       
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
 
 
   <section class='meta'>
@@ -292,13 +231,11 @@
     <div class="meta" id="header-meta">
       
         
-  
-    <h1 class="title">
-      <a href="/2019/09/18/语言学习/python/python个人笔记/">
-        python的一些个人笔记
-      </a>
-    </h1>
-  
+  <h2 class="title">
+    <a href="/2019/08/06/文章/大学/">
+      大学之道
+    </a>
+  </h2>
 
 
       
@@ -324,7 +261,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-17</p>
+    <p>2019-08-06</p>
   </a>
 </div>
 
@@ -334,9 +271,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/语言学习/python/' rel="nofollow">
+    <a href='/categories/文章/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>语言学习&nbsp;/&nbsp;python</p>
+      <p>文章</p>
     </a>
   </div>
 
@@ -345,19 +282,6 @@
         
           
             
-  
-    <div class="new-meta-item browse busuanzi">
-      <a class='notlink'>
-        <i class="fas fa-eye" aria-hidden="true"></i>
-        <p>
-          <span id="busuanzi_value_page_pv">
-            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
-          </span>
-        </p>
-      </a>
-    </div>
-  
-
 
           
         
@@ -374,296 +298,58 @@
   </section>
 
 
-      <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-          <p><font size="6" color="#rsftaa">python的一些个人笔记</font>  </p>
-<a id="more"></a>
-
-<blockquote>
-<p><code>#!/usr/bin/env python3</code> &nbsp;&nbsp;&nbsp; 或 &nbsp;&nbsp;&nbsp; <code>#!/usr/bin/python3</code><br><code>#coding=utf-8</code><br>用来指定由哪个解释器来执行脚本,和指定字符编码</p>
-</blockquote>
-<hr>
-<p><font size="5" color="#f0ar02">python中的关键字:</font><br><img src="../../../img/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/python/keyword.jpg" alt title="keyword"></p>
-<p><font size="6" color="#ff00a0">在python中TAB缩进很重要，缩进不一样可能会导致错误</font>  </p>
-<blockquote>
-<p>python中如果语句很长可以用反斜杠(<code>\</code>)来实现多行一句，但是在<font color="#csdt">{},[],()</font>中是不需要用<code>\</code>来表示换行的  </p>
-</blockquote>
-<hr>
-<p>在python的输出中：  </p>
-<blockquote>
-<p>print( 变量[头下标:尾下标:步长]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>sequence[start : end : step]</code> )  </p>
-<blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;s = asdfghj</span><br><span class="line">&gt;&gt;s[::<span class="number">-1</span>]</span><br><span class="line">&gt;&gt;s[<span class="number">0</span>:<span class="number">5</span>:<span class="number">2</span>]<span class="comment">#sequence[start : end : step]</span></span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>输出为:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;jhgfdsa  </span><br><span class="line">&gt;&gt;adg</span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>step:表示切片，就是从几开始数到第几个,中间的不要了，如果是负数就把整个字符串倒序  </p>
-</blockquote>
-<p>在输出的前面加<font color="#ff0000" size="4">r</font>可以使转义字符<code>\</code>和后面的字符显示    </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;print(<span class="string">r'hello\nrun'</span>)</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<hr>
-<p>print默认输出换行，如果要输出不换行需要在变量末尾加上<strong>end=”&nbsp;&nbsp;”</strong>  </p>
-<blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;print(x,end=<span class="string">" "</span>)</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<hr>
-<p>python导入模块：  </p>
-<blockquote>
-<p><code>import</code>格式：<br>整个模块导入:<code>import somemodule</code><br><code>from...import</code>格式:<br>导入某个模块中的某个函数:<code>from somemodule import somefunction</code><br>导入某个模块中的多个函数:<code>from somemodule import first,second</code><br>导入整个模块:<code>from somemodule import *</code>  </p>
-</blockquote>
-<hr>
-<p>python的标准数据类型: </p>
-<blockquote>
-<p><font size="6" color="#ffaw00">不可变数据:</font><br>Number(数字) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 支持&nbsp;&nbsp;<strong>int</strong>,<strong>float</strong>,<strong>bool</strong>,<strong>complex(复数)</strong>   </p>
-<blockquote>
-<p>可以用<code>isinstance(object,classinfo)</code>来判断变量的类型</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;a=<span class="number">1</span>  </span><br><span class="line">&gt;&gt;isinstance(a,int)<span class="comment">#isinstance(object,classinfo)</span></span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p><code>isinstance</code>和<code>type</code>的区别在于<code>isinstace</code>对认为子类是一种父类类型，而<code>type</code>不会<br>在<code>isinstance</code>中如果<code>classinfo</code>不是一种数据类型或者由数据类型构成的元组，将引发一个TypeError异常。</p>
-</blockquote>
-<p>String(字符串)  </p>
-<blockquote>
-<p>加号 + 是列表连接运算符，星号 * 是重复操作  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;<span class="keyword">print</span> (list1 * <span class="number">2</span>)<span class="comment">#输出两次列表  </span></span><br><span class="line">&gt;&gt;<span class="keyword">print</span> (list1 + list2)<span class="comment">#连接列表</span></span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>Tuple(元组)<br><font size="6" color="#ffaw00">可变数据:</font><br>List(列表)<br>Set(集合)<br>Dictionary(字典)  </p>
-</blockquote>
-<hr>
-<p><code>var</code>是动态变量名，是可以不需要预先定义数据类型的，即使两个变量名相同，但是两个变量的ID是不同的，所以可以使用相同的名字来定义不同值的变量。  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var = <span class="number">13</span></span><br><span class="line"><span class="keyword">print</span> id(var)<span class="comment">#id=24668320</span></span><br><span class="line">var = <span class="number">16</span></span><br><span class="line"><span class="keyword">print</span> id(var)<span class="comment">#id=24667780</span></span><br></pre></td></tr></table></figure>
-
-<p>可以使用<code>del</code>来删除对象引用  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">del</span> var_a, var_b</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">python中字符串的变量是不能改变的(就是不能给已被赋值的再赋值)，不像C中是可变的`a[<span class="number">1</span>]=<span class="string">'d'</span>`  </span><br><span class="line"></span><br><span class="line">****</span><br><span class="line"></span><br><span class="line">List是python中使用最频繁的数据类型,List中的数据类型可以不相同,可以是数字，字符串，列表  </span><br><span class="line">![](../../../img/语言学习/python/List.jpg <span class="string">"List"</span>)  </span><br><span class="line"></span><br><span class="line">List中的元素是可变的,和String中不一样，可以改变其中的内容 </span><br><span class="line"></span><br><span class="line">&gt;和String一样，输出中 : `sequence[start : end : step]`  </span><br><span class="line">&gt;``` python </span><br><span class="line">&gt;inputw = [<span class="string">'i'</span>,<span class="string">'love'</span>,<span class="string">'game'</span>]</span><br><span class="line">&gt;inputr = inputw[<span class="number">-1</span>::<span class="number">-1</span>]</span><br><span class="line">&gt;print(inputr)</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>输出为:  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;game love i</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<hr>
-<p><code>Tuple</code>(元组),<code>String</code>和<code>List</code>都属于 <strong>sequence(序列)</strong>    </p>
-<p><code>Tuple</code>的0个元素和1个元素是比较特殊:  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tup1 = ()<span class="comment">#空元组</span></span><br><span class="line">tup2 = (<span class="number">1</span>,)<span class="comment">#一个元素，需要在后面加逗号</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><code>set</code>(集合)的基本功能是进行成员关系测试和删除重复元素<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以使用<code>{}</code>和<code>set()</code>函数创建集合<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创建一个空集的时候要用<code>set()</code>,因为<code>{}</code>是字典的空集</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">student = &#123;<span class="string">'tom'</span>,<span class="string">'boy'</span>,<span class="string">'gril'</span>,<span class="string">'tom'</span>&#125;</span><br><span class="line">print(student) <span class="comment">#输出集合，重复的元素被自动去掉  </span></span><br><span class="line"><span class="keyword">if</span> <span class="string">'tom'</span> <span class="keyword">in</span> student :</span><br><span class="line">    print(<span class="string">'tom在'</span>)</span><br><span class="line"><span class="keyword">else</span> :</span><br><span class="line">    print(<span class="string">'tom不在'</span>)</span><br></pre></td></tr></table></figure>
-
-<p>输出为:  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">'tom'</span>,<span class="string">'boy'</span>,<span class="string">'gril'</span>&#125;</span><br><span class="line">tom在</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>dictionary(字典)<br><code>d = {key1 : value1,key2 : value2}</code>,一个键对应一个键值(<code>key : value</code>)，这些键是没有先后顺序的,可以直接添加，更改和删除:  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'tom'</span>, <span class="string">'Age'</span>: <span class="number">13</span>, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125;</span><br><span class="line">dict[<span class="string">'Age'</span>] = <span class="number">16</span>  <span class="comment"># 更新 Age</span></span><br><span class="line">dict[<span class="string">'School'</span>] = <span class="string">"new"</span>  <span class="comment"># 添加信息</span></span><br><span class="line"><span class="keyword">del</span> dict[<span class="string">'Name'</span>] <span class="comment"># 删除键 'Name'</span></span><br><span class="line">dict.clear()     <span class="comment"># 清空字典</span></span><br><span class="line"><span class="keyword">del</span> dict         <span class="comment"># 删除字典</span></span><br><span class="line">len(dict)        <span class="comment"># 字典中键的数量</span></span><br><span class="line">str(dict)        <span class="comment"># 输出字典</span></span><br><span class="line">type(dict)       <span class="comment"># 返回输入的变量类型</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>python的数据类型的转化:<br><code>int(x,[base])</code> 将x转化为一个整数 <font color="#f0asdd">(默认base=10，当base是其他值时转化为其他进制)</font><br><code>hex(x)</code> 将一个整数转化为一个十六进制字符串<br><code>oct(x)</code> 将一个整数转化为一个八进制字符串<br><code>str(x)</code> 将对象转化为字符串<br><code>ord(x)</code> 将一个转化为它的整数值<br><code>chr(x)</code> 将一个整数转化为一个字符<br><code>frozenset(x)</code> 转化为不可变集合  </p>
-
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;大学之道，在明明德，在亲民，在止于至善。知止而后有定，定而后能静，静而后能安，按而后能虑，虑而后能得。物有本末，事有终始，知所先后，则近道矣。<br>&nbsp;&nbsp;&nbsp;&nbsp;古之欲明明德于天下者，先治其国；欲治其国者，先齐其家；欲齐其家者，先修其身；欲修其身者，先正其心；欲正其心者，先诚其意；欲诚其意者，先致其知；致知在格物。物格而后知至；知至而后意诚；意诚而后心正；心正而后身修；身修而后家齐；家齐而后国治；国治而后天下平。<br>&nbsp;&nbsp;&nbsp;&nbsp;自天子以至于庶人，壹是皆以修身为本。其本乱而末治者否矣。其所厚者薄，而其所薄者厚，未之有也！  </p>
+      
+        <div class="readmore">
+          <a href="/2019/08/06/文章/大学/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
         </div>
-        
-          
-
-
-  <section class='meta' id="footer-meta">
-    <hr>
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-18T22:39:31+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年9月18日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/python/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>python</p></a></div>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
-          
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/2019/09/18/语言学习/python/python个人笔记/&title=python的一些个人笔记 | 李小白灵&summary=python的一些个人笔记  "
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
-          
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/child/2019/09/18/语言学习/python/python个人笔记/&title=python的一些个人笔记 | 李小白灵&summary=python的一些个人笔记  "
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-whchat" title="微信" rel="external nofollow noopener noreferrer"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
-          
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/2019/09/18/语言学习/python/python个人笔记/&title=python的一些个人笔记 | 李小白灵&summary=python的一些个人笔记  "
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
-          
-        </a>
-      
-    
-  </div>
-</div>
-
-
-
-        
       
     </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/大学之道/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>大学之道</a>
+        
+      </div>
+    
   </section>
+</article>
 
-
-        
-        
-            <div class="prev-next">
-                
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/2019/09/19/深度学习/深度学习计划/" rel="prev" title="在知乎的量子位上看到的关于深度学习">
-                                  
-                                      在知乎的量子位上看到的关于深度学习
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/深度学习/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>深度学习</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-                
-                    <section class="next">
-                        <span class="art-item-right" aria-hidden="true">
-                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                            <h4>
-                                <a href="/2019/09/17/markdown/hexo的搭建和一些主题的选择/" rel="prev" title="hexo的搭建">
-                                    
-                                        hexo的搭建
-                                    
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/hexo/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>hexo</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-            </div>
-        
-      </section>
-    </article>
-  
-
-  
-    <!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box comments">
-    <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
-      
-      
-        <section id="comments">
-          <div id="lv-container" data-id="city" data-uid="MTAyMC80NjAxNS8yMjUyNg==">
-            <noscript><div><i class='fas fa-exclamation-triangle'>&nbsp;无法加载Livere评论系统，请确保您的网络能够正常访问。</div></noscript>
           </div>
-        </section>
+        
       
-      
-        <section id="comments">
-          <div id="gitalk-container"></div>
-        </section>
-      
-      
-    </section>
-  </article>
+    
+  </section>
+  
+    
+      <br>
+      <div class="prev-next">
+        <div class="prev-next">
+          
+            <a class="prev" rel="prev" href="/page/2/">
+              <section class="post prev" >
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+              </section>
+            </a>
+          
+          <p class="current">
+            3 / 3
+          </p>
+          
+        </div>
+      </div>
 
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
 
   
-
-
-
-
-<script>
-  (function () {
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'
-      } else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js'
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s)
-  })();
-  </script>
-
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-
-  <script>
-    window.subData = {
-      title: 'python的一些个人笔记',
-      tools: true
-    }
-  </script>
 
 
 </div>
@@ -875,9 +561,9 @@
         
           <li><a class="flat-box child" title="/categories/游戏制作/美术/" href="/categories/游戏制作/美术/"><div class='name'>美术</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/语言学习/" href="/categories/语言学习/"><div class='name'>语言学习</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box" title="/categories/语言学习/" href="/categories/语言学习/"><div class='name'>语言学习</div><div class='badge'>(5)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/语言学习/python/" href="/categories/语言学习/python/"><div class='name'>python</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box child" title="/categories/语言学习/python/" href="/categories/语言学习/python/"><div class='name'>python</div><div class='badge'>(5)</div></a></li>
         
       </ul>
     </div>
@@ -1136,34 +822,6 @@ setInterval("createtime()",250);
 
 
 
-  <script type="text/javascript">
-    (function(d, s) {
-      var j, e = d.getElementsByTagName(s)[0];
-      if (typeof LivereTower === 'function') { return; }
-      j = d.createElement(s);
-      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      j.async = true;
-      e.parentNode.insertBefore(j, e);
-    })(document, 'script');
-  </script>
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-  <script type="text/javascript">
-    var gitalk = new Gitalk({
-      clientID: "94f6df9c2887895fee4b",
-      clientSecret: "b027a92e0b4c1d15ebd4228ad85a15e131232714",
-      repo: "li",
-      owner: "lixiaobailing",
-      admin: "lixiaobailing",
-      
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-      
-      distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-    gitalk.render('gitalk-container');
-  </script>
 
 
 
