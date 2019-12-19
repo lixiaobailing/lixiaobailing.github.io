@@ -382,7 +382,7 @@
 <span class="keyword">import</span> os
 
 <span class="function"><span class="keyword">def</span> <span class="title">reename</span><span class="params">()</span>:</span>
-    pathh = <span class="string">"Z:/mine/billbill"</span>
+    pathh = <span class="string">"Z:/mine"</span>
     filelist = os.listdir(pathh)
     <span class="keyword">for</span> files <span class="keyword">in</span> filelist:
         Olddir = os.path.join(pathh, files)
@@ -397,6 +397,45 @@
 
 reename()</code></pre>
 <p>主要是用os库函数中的<code>listdir()</code>函数来实现<br>pathh是文件夹地址位置，用双引号来括起来 文件夹的位置 中间用 <code>/</code> 或者 <code>\\</code> 来分开<br>主要思想就是通过识别文件名中<code>str</code>中是否有Av来区分是否有这个，有就通过删除后14位来实现名字的更改，没有就按照原文件来实现，不做改动。<br>可以自己改代码来实现别的功能    </p>
+<p>&nbsp;<br>&nbsp;<br>&nbsp;  </p>
+<p>后面我下载的东西有的是视频加标题txt文档的格式，然后通过txt文档一个个复制到每个文件上实在是太麻烦了，就改良了一下上面的方法：  </p>
+<pre><code class="python"><span class="comment">#!/usr/bin/env python</span>
+<span class="comment"># -*- coding: UTF-8 -*-</span>
+<span class="keyword">import</span> os
+
+<span class="function"><span class="keyword">def</span> <span class="title">reename</span><span class="params">(line,x,y)</span>:</span>
+    pathh = <span class="string">"Z:/mine"</span>
+    filelist = os.listdir(pathh)
+    q=filelist[<span class="number">0</span>]    <span class="comment">#这里的0可以改成x来在乱序的时候自己改</span>
+    print(filelist)
+    <span class="keyword">for</span> files <span class="keyword">in</span> filelist:    <span class="comment">#可以替换为while(q)</span>
+        Olddir = os.path.join(pathh,q)
+        <span class="comment">#filename = os.path.splitext(q)[0]</span>
+        filetype = os.path.splitext(q)[<span class="number">1</span>]
+        newfilename=line[<span class="number">0</span>:len(line)<span class="number">-1</span>]
+        <span class="keyword">if</span> x==y<span class="number">-1</span>:
+            newfilename=line
+        Newdir = os.path.join(pathh,newfilename + filetype)
+        os.rename(Olddir, Newdir)
+        <span class="keyword">break</span>
+
+
+
+file_object = open(<span class="string">'Z:/mine/1.txt'</span>,<span class="string">'r'</span>)
+<span class="keyword">try</span>:
+    <span class="keyword">with</span> open(<span class="string">'Z:/mine/1.txt'</span>,<span class="string">'r'</span>) <span class="keyword">as</span> file_object:
+        line = file_object.readlines()
+        x=<span class="number">0</span>
+        y=len(line)
+        <span class="keyword">for</span> line <span class="keyword">in</span> line:
+            reename(line,x,y)
+            x=x+<span class="number">1</span>
+<span class="keyword">finally</span>:
+     file_object.close(</code></pre>
+<p>主要修改的就是地址，那个<code>if x==y-1</code>是因为在读取txt文件的时候会在读取最后一个文件的时候没有<code>\n</code>，然后来判断是否是最后一个文件<br>那个<code>filename</code>由于没有用到我就直接注释掉了<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在方法中给入的:    </p>
+<blockquote>
+<p><code>line</code>是读取的txt中那行的内容<br><code>x</code>是第几次第几行，因为在测试的时候文件名字是随机的导致一直在赋值第一个文件，就用这个x来判断别的文件(梯)<br><code>y</code>是这个txt有多少行，用来判断是否到达最后一行(去掉<code>\n</code>)</p>
+</blockquote>
 
         </div>
         
@@ -408,10 +447,10 @@ reename()</code></pre>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-18T16:26:02+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-19T16:05:20+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年12月18日</p>
+    <p>最后更新于 2019年12月19日</p>
   </a>
 </div>
 
